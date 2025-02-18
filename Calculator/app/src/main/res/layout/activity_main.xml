@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundGray"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textWhite"
+            android:textSize="50sp"
+            android:gravity="end" />
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondaryTextWhite"
+            android:textSize="30sp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TableRow
+            style="@style/buttonRow">
+
+            <Button
+                style="@style/buttons"
+                android:onClick="buttonClear"
+                android:text="C" />
+
+            <Button
+                style="@style/buttons"
+                android:text="Del"
+                android:onClick="buttonDel"/>
+
+            <Button
+                style="@style/buttons"
+                android:clickable="false"
+                />
+
+            <Button
+                style="@style/operators"
+                android:text="/" />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/buttonRow">
+
+            <Button
+                style="@style/numbers"
+                android:text="7"/>
+
+            <Button
+                style="@style/numbers"
+                android:text="8"/>
+
+            <Button
+                style="@style/numbers"
+                android:text="9"/>
+
+            <Button
+                style="@style/operators"
+                android:text="x" />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/buttonRow">
+
+            <Button
+                style="@style/numbers"
+                android:text="4"/>
+
+            <Button
+                style="@style/numbers"
+                android:text="5"/>
+
+            <Button
+                style="@style/numbers"
+                android:text="6"/>
+
+            <Button
+                style="@style/operators"
+                android:text="-" />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/buttonRow">
+
+            <Button
+                style="@style/numbers"
+                android:text="1"/>
+
+            <Button
+                style="@style/numbers"
+                android:text="2"/>
+
+            <Button
+                style="@style/numbers"
+                android:text="3"/>
+
+            <Button
+                style="@style/operators"
+                android:text="+" />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/buttonRow">
+
+            <Button
+                style="@style/operators"
+                android:backgroundTint="@color/secondaryGray"
+                android:text="."/>
+
+            <Button
+                style="@style/numbers"
+                android:text="0"/>
+
+
+            <Button
+                style="@style/operators"
+                android:layout_weight="2"
+                android:onClick="buttonEquals"
+                android:text="=" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="buttonRow">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="buttons">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="backgroundTint">@color/primaryGray</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:textSize">30sp</item>
+        <item name="cornerRadius">0dp</item>
+    </style>
+
+    <style name="operators">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="backgroundTint">@color/primaryOrange</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:textSize">30sp</item>
+        <item name="cornerRadius">0dp</item>
+        <item name="android:onClick">buttonOperators</item>
+    </style>
+
+    <style name="numbers">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="backgroundTint">@color/secondaryGray</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:textSize">30sp</item>
+        <item name="cornerRadius">0dp</item>
+        <item name="android:onClick">buttonNumbers</item>
+    </style>
+
+</resources>
